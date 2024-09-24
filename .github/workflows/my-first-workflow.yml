@@ -13,11 +13,16 @@ on:
 
 jobs:
   greeting:
-    name: Greenting 
+    name: Greeting 
     runs-on: ubuntu-latest
     steps:
       - name: Shell Demo
         run: echo "Hej flutter.com Devs 👋"
+  demo:
+    name: Checkout Demo
+    runs-on: ubuntu-latest
+    needs: greeting
+    steps:
       - name: List Contents before Checkout
         run: ls
       - name: Checkout Repository
