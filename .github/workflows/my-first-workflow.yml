@@ -12,8 +12,17 @@ on:
     branches: main
 
 jobs:
-  demo:
+  greeting:
+    name: Greenting 
     runs-on: ubuntu-latest
     steps:
       - name: Shell Demo
         run: echo "Hej flutter.com Devs 👋"
+      - name: List Contents before Checkout
+        run: ls
+      - name: Checkout Repository
+        uses: actions/checkout@v4.1.7
+        with:
+          ref: main
+      - name: List Contents after Checkout
+        run: ls
