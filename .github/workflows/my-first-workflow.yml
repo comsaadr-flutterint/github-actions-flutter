@@ -17,3 +17,6 @@ jobs:
     steps:
       - name: Shell Demo
         run: echo "Hej flutter.com Devs 👋"
+      - name: Python Step
+        shell: python
+        run: python --version
