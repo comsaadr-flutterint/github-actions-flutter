@@ -1,0 +1,11 @@
+name: My First Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Shell Demo
+        run: echo "Hej flutter.com Devs 👋"
