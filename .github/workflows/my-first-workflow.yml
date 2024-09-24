@@ -6,6 +6,10 @@ on:
       Demo:
         default: "Some Default"
         required: true
+  schedule:
+    - cron: "* 1 * * *"
+  push:
+    branches: main
 
 jobs:
   demo:
